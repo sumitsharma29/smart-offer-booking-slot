@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartOfferBooking.Core", "SmartOfferBooking.Core\SmartOfferBooking.Core.csproj", "{B7E2A89F-F012-4089-A2E4-3A0AC294F99F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartOfferBooking.Infrastructure", "SmartOfferBooking.Infrastructure\SmartOfferBooking.Infrastructure.csproj", "{C3B346AF-BDDE-4C5C-9A52-87A4601A9400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartOfferBooking.API", "SmartOfferBooking.API\SmartOfferBooking.API.csproj", "{D684AF0C-85DF-4A92-A238-C1BBE1B64F7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7E2A89F-F012-4089-A2E4-3A0AC294F99F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E2A89F-F012-4089-A2E4-3A0AC294F99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E2A89F-F012-4089-A2E4-3A0AC294F99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E2A89F-F012-4089-A2E4-3A0AC294F99F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3B346AF-BDDE-4C5C-9A52-87A4601A9400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B346AF-BDDE-4C5C-9A52-87A4601A9400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3B346AF-BDDE-4C5C-9A52-87A4601A9400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B346AF-BDDE-4C5C-9A52-87A4601A9400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D684AF0C-85DF-4A92-A238-C1BBE1B64F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D684AF0C-85DF-4A92-A238-C1BBE1B64F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D684AF0C-85DF-4A92-A238-C1BBE1B64F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D684AF0C-85DF-4A92-A238-C1BBE1B64F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
