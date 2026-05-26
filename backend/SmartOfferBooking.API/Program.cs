@@ -75,7 +75,7 @@ builder.Services.AddAuthentication(options =>
 var originsStr = builder.Configuration["Cors:AllowedOrigins"];
 var allowedOrigins = !string.IsNullOrEmpty(originsStr)
     ? originsStr.Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries).Select(o => o.Trim()).ToArray()
-    : new[] { "http://localhost:5173", "http://localhost:3000" };
+    : new[] { "http://localhost:5173", "http://localhost:3000", "https://sumitsharma29.github.io" };
 
 builder.Services.AddCors(options =>
 {
