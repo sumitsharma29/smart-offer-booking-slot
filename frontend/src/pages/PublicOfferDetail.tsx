@@ -147,7 +147,7 @@ export default function PublicOfferDetail() {
       
       if (found) {
         setOffer(found);
-        setError('System operating in Offline Demo mode. API connection failed.');
+        setError(`System operating in Offline Demo mode. API connection failed (tried connecting to ${API_BASE_URL}).`);
       } else {
         // Fallback Mock offer details
         const mockOffers = [
@@ -191,7 +191,7 @@ export default function PublicOfferDetail() {
         const mockFound = mockOffers.find((o: any) => o.id === id);
         if (mockFound) {
           setOffer(mockFound);
-          setError('System operating in Offline Demo mode. API connection failed.');
+          setError(`System operating in Offline Demo mode. API connection failed (tried connecting to ${API_BASE_URL}).`);
         } else {
           setError('Offer not found.');
         }

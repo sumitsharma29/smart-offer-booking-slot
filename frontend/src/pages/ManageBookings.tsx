@@ -99,7 +99,7 @@ export default function ManageBookings() {
       ];
 
       setBookings(mockBookings);
-      setError('System operating in Offline Demo mode. API connection failed.');
+      setError(`System operating in Offline Demo mode. API connection failed (tried connecting to ${API_BASE_URL}).`);
     } finally {
       setLoading(false);
     }

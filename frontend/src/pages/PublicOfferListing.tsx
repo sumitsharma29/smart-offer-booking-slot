@@ -282,7 +282,7 @@ export default function PublicOfferListing() {
         { id: 'coaching-id', name: 'CodeCraft Academy Bengaluru' },
         { id: 'clinic-id', name: 'Apollo Wellness Diagnostics' }
       ]);
-      setError('System operating in Offline Demo mode. API connection failed.');
+      setError(`System operating in Offline Demo mode. API connection failed (tried connecting to ${API_BASE_URL}).`);
     } finally {
       setLoading(false);
     }

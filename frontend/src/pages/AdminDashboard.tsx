@@ -410,7 +410,7 @@ export default function AdminDashboard() {
         totalRevenue: 308.00,
         recentBookings: mockBookings
       });
-      setError('System operating in Offline Demo mode. API connection failed.');
+      setError(`System operating in Offline Demo mode. API connection failed (tried connecting to ${API_BASE_URL}).`);
     } finally {
       setLoading(false);
     }
