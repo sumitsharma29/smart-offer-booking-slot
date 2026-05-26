@@ -8,6 +8,33 @@
     <meta name="description" content="SmartSlot is a concurrency-secured, real-time booking platform for premium flash discount slots at spas, restaurants, gyms, and clinics. Lock your seat before it's gone." />
     <meta name="keywords" content="flash offer, slot booking, discount, spa, gym, restaurant, real-time, booking system" />
 
+    <!-- Start Single Page Apps for GitHub Pages Option -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState.
+      (function(l) {
+        if (l.search[0] === '?') {
+          var q = {};
+          l.search.slice(1).split('&').forEach(function(v) {
+            var a = v.split('=');
+            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+          });
+          if (q.p !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (q.p || '') +
+              (q.q ? ('?' + q.q) : '') +
+              l.hash
+            );
+          }
+        }
+      }(window.location));
+    </script>
+    <!-- End Single Page Apps for GitHub Pages Option -->
+
     <!-- Open Graph / Social Preview -->
     <meta property="og:title" content="SmartSlot – Premium Flash Offer Booking" />
     <meta property="og:description" content="Book exclusive discount slots at premium venues, secured in real-time against double-booking." />
@@ -30,7 +57,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
+          navigator.serviceWorker.register('./sw.js')
             .then(reg => console.log('SmartSlot SW registered.', reg.scope))
             .catch(err => console.warn('SmartSlot SW registration failed: ', err));
         });

@@ -12,8 +12,9 @@ import ManageOffers from './pages/ManageOffers';
 import ManageBookings from './pages/ManageBookings';
 
 export default function App() {
+  const basename = import.meta.env.BASE_URL === '/' ? undefined : import.meta.env.BASE_URL.replace(/\/$/, '');
   return (
-    <Router>
+    <Router basename={basename}>
       <Layout>
         <Routes>
           <Route path="/" element={<PublicOfferListing />} />
